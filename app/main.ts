@@ -5,7 +5,7 @@ import * as url from 'url';
 
 // Initialize remote module
 require('@electron/remote/main').initialize();
-
+app.allowRendererProcessReuse = false;
 let win: BrowserWindow = null;
 const args = process.argv.slice(1),
   serve = args.some(val => val === '--serve');

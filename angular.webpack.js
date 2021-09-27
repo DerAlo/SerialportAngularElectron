@@ -5,6 +5,9 @@
 module.exports = (config, options) => {
     config.target = 'electron-renderer';
 
+  config.externals = {
+    "serialport": "require('serialport')"
+  }
 
     if (options.fileReplacements) {
         for(let fileReplacement of options.fileReplacements) {

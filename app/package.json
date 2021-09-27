@@ -3,7 +3,9 @@
   "version": "10.1.0",
   "main": "main.js",
   "private": true,
+  "postinstall": "electron-rebuild",
   "dependencies": {
-    "@electron/remote": "1.2.0"
+    "@electron/remote": "1.2.0",
+    "serialport": "^9.2.3"
   }
 }
